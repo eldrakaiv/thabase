@@ -1,0 +1,114 @@
+/* Contenedor principal */
+.container {
+    max-width: 600px;  /* Reduce el tamaño máximo del contenedor */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1, h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;  /* Centra el texto del título */
+}
+
+/* Estilo para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centra los elementos dentro del formulario */
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="number"],
+select {
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;  /* Asegura que los campos de entrada no sean demasiado grandes */
+    max-width: 300px;  /* Limita el ancho máximo de los campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;  /* Para incluir padding y border en el cálculo del ancho */
+}
+
+/* Estilo para el botón */
+input[type="submit"], .button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el mouse sobre el botón */
+input[type="submit"]:hover, .button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de los enlaces */
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Agrupación de botones */
+.button-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Ajustar la tabla de los listados */
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para el formulario */
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+    width: 100%;
+    text-align: center;  /* Centra el texto de las etiquetas */
+}
+
+/* Asegura que los elementos no se estiren demasiado */
+input, select {
+    width: auto;
+}
+
+/* Centrar los textos de los botones */
+input[type="submit"], .button {
+    width: auto;  /* Hace que los botones no se estiren más allá de su tamaño */
+    text-align: center;
+}
